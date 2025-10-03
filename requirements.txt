@@ -1,0 +1,1 @@
+pyspark, apache-airflow, kafka-python, pandas, pyarrow

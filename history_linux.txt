@@ -1,0 +1,75 @@
+    1  pwd
+    2  cd 
+    3  cd Escritorio
+    4  cd Desktop/
+    5  mkdir bigdata_pipeline_project
+    6  cd bigdata_pipeline_project/
+    7  mkdir data, etl, pipelines, notebooks, src, config, schemas, logs, tests, outbuts
+    8  cd data
+    9  mkdir raw processed archive
+   10  cd raw
+   11  mkdir streaming batch
+   12  cd ..
+   13  mkdir processed/bronze processed/silver processed/gold
+   14  cd ..
+   15  cd ..
+   16  mkdir data data/raw data/processed
+   17  cd Desktop/
+   18  mkdir bigdata_pipeline_project
+   19  mkdir bigdata_pipeline_project/data bigdata_pipeline_project/etl bigdata_pipeline_project/pipelines bigdata_pipeline_project/notebooks bigdata_pipeline_project/src bigdata_pipeline_project/config bigdata_pipeline_project/schemas bigdata_pipeline_project/logs bigdata_pipeline_project/tests bigdata_pipeline_project/outputs
+   20  mkdir bigdata_pipeline_project/data/raw bigdata_pipeline_project/data/processed bigdata_pipeline_project/data/archive
+   21  mkdir bigdata_pipeline_project/etl/extract bigdata_pipeline_project/etl/transform bigdata_pipeline_project/load
+   22  mkdir bigdata_pipeline_project/pipelines/airflow bigdata_pipeline_project/pipelines/spark
+   23  mkdir bigdata_pipeline_project/src/ingestion bigdata_pipeline_project/src/quality bigdata_pipeline_project/src/utils
+   24  mkdir bigdata_pipeline_project/data/raw/streaming bigdata_pipeline_project/data/raw/batch
+   25  mkdir bigdata_pipeline_project/data/processed/bronze bigdata_pipeline_project/data/processed/silver bigdata_pipeline_project/data/processed/gold
+   26  cd bigdata_pipeline_project/
+   27  tree
+   28  ls -R
+   29  mv load etl/
+   30  echo # Big Data Pipeline Project - Data Engineering > README.md
+   31  touch README.md
+   32  ls
+   33  cat README.md 
+   34  nano README.md 
+   35  echo # Big Data Pipeline Project - Data Engineering > README.md
+   36  cat README.md 
+   37  nano README.md 
+   38  cat README.md
+   39  cat requirements.txt
+   40  touch requirements.txt
+   41  echo pyspark, apache-airflow, kafka-python, pandas, pyarrow >> requirements.txt 
+   42  cat requirements.txt 
+   43  mkdir .gitignore .gitignore/.pyc .gitignore/__pycache__ .gitignore/logs .gitignore/.log
+   44  cd .gitignore/
+   45  ls
+   46  cd ..
+   47  cd config/
+   48  touch database.yaml spark.conf
+   49  ls
+   50  cd ..
+   51  touch data/raw/batch/sales_2024_Q1.csv data/raw/batch/sales_2024_Q2.csv data/raw/batch/customers.json
+   52  ls data/raw/batch
+   53  touch data/raw/streaming/events_01.json data/raw/streaming/events_02.json
+   54  ls data/raw/streaming/
+   55  touch logs/pipeline_2024-01-15.log logs/pipeline_2024-02-20.log
+   56  ls logs/
+   57  nano logs/pipeline_2024-01-15.log
+   58  cat logs/pipeline_2024-01-15.log
+   59  find -name ".csv"
+   60  find -name "*.csv"
+   61* find   "*.json"
+   62  grep -r "*.log"
+   63  grep -name "*.log"
+   64  grep -r "data"
+   65  cp data/raw/batch/sales_2024_Q1.csv data/processed/bronze/
+   66  ls data/processed/bronze/
+   67  cp data/processed/bronze/sales_2024_Q1.csv data/processed/silver/sales_2024_Q1_validated.csv
+   68  ls data/processed/silver/
+   69  cp data/raw/streaming/*.csv data/archive/
+   70  cp data/raw/streaming/*.json data/archive/
+   71  ls data/archive/
+   72  ls data/processed/bronze/
+   73  ls data/processed/silver/
+   74  ls data/archive/
+   75  history >> history.txt
